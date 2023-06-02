@@ -19,7 +19,11 @@ const ContactForm = () => {
       contact =>
         contact.name.toLowerCase() === normoliseName || contact.phone === phone
     );
+
     if (contactFind) {
+      console.log(contactFind);
+      console.log(phone, name);
+
       alert(`${contactFind.name} is alredy contact`);
       return;
     }
